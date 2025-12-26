@@ -1,0 +1,123 @@
+[
+  {
+    "id": "mean",
+    "type": "concept",
+    "title": "Mean (Average)",
+    "latex": "\\bar{x} = \\frac{1}{n}\\sum_{i=1}^{n} x_i",
+    "description": "The sum of all values divided by the number of values. Most common measure of central tendency.",
+    "domains": ["Statistics", "Data Analysis"],
+    "tags": ["statistics", "average", "central-tendency"],
+    "complexity": 2,
+    "requires": ["sum", "division"],
+    "generalizes": [],
+    "special_cases": ["weighted_mean", "geometric_mean"],
+    "used_in": ["standard_deviation", "variance", "regression"],
+    "appears_in": [
+      {"system": "GCSE", "exam": "GCSE Mathematics", "year_level": 10, "depth": "core", "required": true},
+      {"system": "SAT", "exam": "SAT Math", "year_level": 12, "depth": "core", "required": true},
+      {"system": "VCE", "exam": "Further Mathematics", "year_level": 11, "depth": "core", "required": true}
+    ],
+    "created_at": 1735238400000,
+    "updated_at": 1735238400000
+  },
+  {
+    "id": "median",
+    "type": "concept",
+    "title": "Median",
+    "description": "The middle value when data is ordered. Robust to outliers. If even number of values, average of two middle values.",
+    "domains": ["Statistics", "Data Analysis"],
+    "tags": ["statistics", "median", "central-tendency"],
+    "complexity": 2,
+    "requires": ["ordering", "average"],
+    "generalizes": [],
+    "special_cases": [],
+    "used_in": ["quartile", "iqr", "boxplot"],
+    "appears_in": [
+      {"system": "GCSE", "exam": "GCSE Mathematics", "year_level": 10, "depth": "core", "required": true},
+      {"system": "SAT", "exam": "SAT Math", "year_level": 12, "depth": "core", "required": true}
+    ],
+    "created_at": 1735238400000,
+    "updated_at": 1735238400000
+  },
+  {
+    "id": "mode",
+    "type": "concept",
+    "title": "Mode",
+    "description": "The most frequently occurring value in a dataset. Can have no mode, one mode (unimodal), or multiple modes (bimodal, multimodal).",
+    "domains": ["Statistics", "Data Analysis"],
+    "tags": ["statistics", "mode", "central-tendency"],
+    "complexity": 2,
+    "requires": ["frequency"],
+    "generalizes": [],
+    "special_cases": [],
+    "used_in": ["distribution_analysis"],
+    "appears_in": [
+      {"system": "GCSE", "exam": "GCSE Mathematics", "year_level": 10, "depth": "core", "required": true},
+      {"system": "SAT", "exam": "SAT Math", "year_level": 12, "depth": "core", "required": true}
+    ],
+    "created_at": 1735238400000,
+    "updated_at": 1735238400000
+  },
+  {
+    "id": "standard_deviation",
+    "type": "concept",
+    "title": "Standard Deviation",
+    "latex": "\\sigma = \\sqrt{\\frac{1}{n}\\sum_{i=1}^{n}(x_i - \\bar{x})^2}",
+    "description": "Measures the spread of data around the mean. Average distance of each data point from the mean. Low SD means data clustered, high SD means data spread out.",
+    "domains": ["Statistics", "Data Analysis"],
+    "tags": ["statistics", "spread", "deviation", "variance"],
+    "complexity": 5,
+    "requires": ["mean", "variance", "square_root"],
+    "generalizes": [],
+    "special_cases": [],
+    "used_in": ["normal_distribution", "z_score", "hypothesis_testing"],
+    "appears_in": [
+      {"system": "VCE", "exam": "Further Mathematics", "year_level": 12, "depth": "core", "required": true},
+      {"system": "SAT", "exam": "SAT Math", "year_level": 12, "depth": "intro", "required": true},
+      {"system": "IB", "exam": "Mathematics SL", "year_level": 12, "depth": "core", "required": true}
+    ],
+    "created_at": 1735238400000,
+    "updated_at": 1735238400000
+  },
+  {
+    "id": "probability",
+    "type": "concept",
+    "title": "Probability",
+    "latex": "P(A) = \\frac{\\text{favorable outcomes}}{\\text{total outcomes}}",
+    "description": "Measure of likelihood that an event will occur. Ranges from 0 (impossible) to 1 (certain). Foundation of statistics and uncertainty quantification.",
+    "domains": ["Probability", "Statistics"],
+    "tags": ["probability", "likelihood", "fundamental"],
+    "complexity": 4,
+    "requires": ["fraction", "counting"],
+    "generalizes": [],
+    "special_cases": ["conditional_probability", "joint_probability"],
+    "used_in": ["expected_value", "bayes_theorem", "random_variable"],
+    "appears_in": [
+      {"system": "GCSE", "exam": "GCSE Mathematics", "year_level": 11, "depth": "core", "required": true},
+      {"system": "SAT", "exam": "SAT Math", "year_level": 12, "depth": "core", "required": true},
+      {"system": "VCE", "exam": "Mathematical Methods", "year_level": 11, "depth": "core", "required": true}
+    ],
+    "created_at": 1735238400000,
+    "updated_at": 1735238400000
+  },
+  {
+    "id": "normal_distribution",
+    "type": "concept",
+    "title": "Normal Distribution",
+    "latex": "f(x) = \\frac{1}{\\sigma\\sqrt{2\\pi}}e^{-\\frac{1}{2}\\left(\\frac{x-\\mu}{\\sigma}\\right)^2}",
+    "description": "Bell-shaped probability distribution symmetric around the mean. Fundamental in statistics. Many natural phenomena follow normal distribution.",
+    "domains": ["Statistics", "Probability"],
+    "tags": ["distribution", "normal", "gaussian", "bell-curve"],
+    "complexity": 7,
+    "requires": ["mean", "standard_deviation", "probability", "exponential_function"],
+    "generalizes": [],
+    "special_cases": ["standard_normal"],
+    "used_in": ["hypothesis_testing", "confidence_interval", "central_limit_theorem"],
+    "appears_in": [
+      {"system": "VCE", "exam": "Further Mathematics", "year_level": 12, "depth": "core", "required": true},
+      {"system": "IB", "exam": "Mathematics SL", "year_level": 12, "depth": "core", "required": true}
+    ],
+    "created_at": 1735238400000,
+    "updated_at": 1735238400000
+  }
+]
