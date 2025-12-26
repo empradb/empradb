@@ -1,0 +1,46 @@
+{
+  "id": "pythagorean_identity",
+  "type": "identity",
+  "title": "Pythagorean Identity",
+  "latex": "\\sin^2\\theta + \\cos^2\\theta = 1",
+  "description": "Fundamental trigonometric identity derived from the Pythagorean theorem applied to the unit circle. Foundation for many other trigonometric identities and simplifications.",
+  "domains": ["Trigonometry", "Geometry"],
+  "tags": ["trigonometry", "identity", "fundamental", "unit-circle"],
+  "complexity": 4,
+  "requires": ["sin_function", "cos_function", "pythagorean_theorem", "unit_circle"],
+  "generalizes": [],
+  "special_cases": [],
+  "used_in": ["trig_simplification", "trig_equations", "double_angle_formulas"],
+  "appears_in": [
+    {
+      "system": "VCE",
+      "exam": "Mathematical Methods",
+      "year_level": 11,
+      "depth": "core",
+      "required": true
+    },
+    {
+      "system": "AP",
+      "exam": "AP Calculus AB",
+      "year_level": 12,
+      "depth": "intro",
+      "required": true
+    },
+    {
+      "system": "IB",
+      "exam": "Mathematics HL",
+      "year_level": 11,
+      "depth": "core",
+      "required": true
+    },
+    {
+      "system": "A_LEVEL",
+      "exam": "A-Level Mathematics",
+      "year_level": 12,
+      "depth": "core",
+      "required": true
+    }
+  ],
+  "created_at": 1735238400000,
+  "updated_at": 1735238400000
+}
