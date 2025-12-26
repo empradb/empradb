@@ -1,0 +1,84 @@
+[
+  {
+    "id": "algebra_quadratic",
+    "type": "concept",
+    "title": "Quadratic Function",
+    "latex": "f(x) = ax^2 + bx + c",
+    "description": "A polynomial function of degree two. Creates a parabola when graphed. Fundamental in algebra with applications across mathematics and physics.",
+    "domains": ["Algebra", "Functions"],
+    "tags": ["polynomial", "parabola", "algebra", "function"],
+    "complexity": 4,
+    "requires": ["function", "polynomial", "real_numbers"],
+    "generalizes": ["linear_function"],
+    "special_cases": [],
+    "used_in": ["optimization", "projectile_motion", "vertex_form"],
+    "appears_in": [
+      {"system": "VCE", "exam": "Mathematical Methods", "year_level": 10, "depth": "core", "required": true},
+      {"system": "GCSE", "exam": "GCSE Mathematics", "year_level": 11, "depth": "core", "required": true},
+      {"system": "SAT", "exam": "SAT Math", "year_level": 12, "depth": "core", "required": true}
+    ],
+    "created_at": 1735238400000,
+    "updated_at": 1735238400000
+  },
+  {
+    "id": "function",
+    "type": "concept",
+    "title": "Function",
+    "latex": "f: A \\to B",
+    "description": "A relation that maps each element of a set to exactly one element of another set. Foundation of mathematical analysis and modeling.",
+    "domains": ["Algebra", "Functions", "Analysis"],
+    "tags": ["fundamental", "function", "mapping"],
+    "complexity": 4,
+    "requires": ["set", "relation"],
+    "generalizes": [],
+    "special_cases": ["linear_function", "quadratic_function", "exponential_function"],
+    "used_in": ["calculus_limit", "calculus_derivative", "composition"],
+    "appears_in": [
+      {"system": "VCE", "exam": "Mathematical Methods", "year_level": 10, "depth": "core", "required": true},
+      {"system": "IB", "exam": "Mathematics SL", "year_level": 11, "depth": "core", "required": true}
+    ],
+    "created_at": 1735238400000,
+    "updated_at": 1735238400000
+  },
+  {
+    "id": "polynomial",
+    "type": "concept",
+    "title": "Polynomial",
+    "latex": "P(x) = a_nx^n + a_{n-1}x^{n-1} + \\cdots + a_1x + a_0",
+    "description": "An expression consisting of variables and coefficients involving only addition, subtraction, multiplication, and non-negative integer exponents.",
+    "domains": ["Algebra"],
+    "tags": ["algebra", "polynomial", "expression"],
+    "complexity": 5,
+    "requires": ["exponent", "variable", "coefficient"],
+    "generalizes": [],
+    "special_cases": ["linear_function", "quadratic_function", "cubic_function"],
+    "used_in": ["polynomial_division", "factor_theorem", "remainder_theorem"],
+    "appears_in": [
+      {"system": "VCE", "exam": "Mathematical Methods", "year_level": 10, "depth": "core", "required": true},
+      {"system": "AP", "exam": "AP Calculus AB", "year_level": 12, "depth": "intro", "required": true}
+    ],
+    "created_at": 1735238400000,
+    "updated_at": 1735238400000
+  },
+  {
+    "id": "linear_function",
+    "type": "concept",
+    "title": "Linear Function",
+    "latex": "f(x) = mx + b",
+    "description": "A polynomial function of degree one. Produces a straight line when graphed. Models constant rate of change.",
+    "domains": ["Algebra", "Functions"],
+    "tags": ["linear", "function", "slope", "fundamental"],
+    "complexity": 3,
+    "requires": ["function", "slope"],
+    "generalizes": [],
+    "special_cases": [],
+    "used_in": ["linear_systems", "linear_programming", "calculus_derivative"],
+    "appears_in": [
+      {"system": "VCE", "exam": "Mathematical Methods", "year_level": 10, "depth": "core", "required": true},
+      {"system": "GCSE", "exam": "GCSE Mathematics", "year_level": 10, "depth": "core", "required": true},
+      {"system": "SAT", "exam": "SAT Math", "year_level": 12, "depth": "core", "required": true}
+    ],
+    "created_at": 1735238400000,
+    "updated_at": 1735238400000
+  }
+]
