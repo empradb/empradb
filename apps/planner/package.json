@@ -1,0 +1,24 @@
+{
+  "name": "@empradb/planner",
+  "version": "0.1.0",
+  "private": true,
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@empradb/schema": "workspace:*",
+    "@empradb/graph": "workspace:*",
+    "@empradb/curriculum": "workspace:*",
+    "@empradb/exams": "workspace:*",
+    "@empradb/diagnostics": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.0",
+    "tsx": "^4.7.0",
+    "@types/node": "^20.10.0"
+  }
+}
