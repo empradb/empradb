@@ -1,0 +1,49 @@
+{
+  "id": "ap_calculus_ab",
+  "system": "AP",
+  "name": "AP Calculus AB",
+  "year_level": 12,
+  "required_concepts": [
+    "calculus_limit",
+    "continuity",
+    "calculus_derivative",
+    "product_rule",
+    "quotient_rule",
+    "chain_rule",
+    "implicit_differentiation",
+    "related_rates",
+    "optimization",
+    "mean_value_theorem",
+    "antiderivative",
+    "definite_integral",
+    "fundamental_theorem_calculus",
+    "u_substitution",
+    "riemann_sum",
+    "area_under_curve",
+    "volume_of_revolution"
+  ],
+  "optional_concepts": [
+    "lhopitals_rule",
+    "euler_method",
+    "slope_field"
+  ],
+  "excluded_concepts": [
+    "partial_derivative",
+    "multivariable_calculus",
+    "vector_calculus",
+    "differential_equations_advanced",
+    "taylor_series",
+    "fourier_series",
+    "laplace_transform"
+  ],
+  "typical_depth": {
+    "calculus_limit": "core",
+    "calculus_derivative": "core",
+    "product_rule": "core",
+    "chain_rule": "core",
+    "optimization": "advanced",
+    "definite_integral": "core",
+    "volume_of_revolution": "advanced"
+  },
+  "time_limit_minutes": 195
+}
