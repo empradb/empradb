@@ -1,0 +1,46 @@
+{
+  "id": "product_rule",
+  "type": "formula",
+  "title": "Product Rule",
+  "latex": "(fg)' = f'g + fg'",
+  "description": "Rule for differentiating the product of two functions. States that the derivative of a product is the first function times the derivative of the second, plus the second function times the derivative of the first.",
+  "domains": ["Calculus", "Differentiation"],
+  "tags": ["differentiation", "calculus", "derivative-rule"],
+  "complexity": 5,
+  "requires": ["calculus_derivative", "function"],
+  "generalizes": [],
+  "special_cases": [],
+  "used_in": ["chain_rule", "integration_by_parts", "implicit_differentiation"],
+  "appears_in": [
+    {
+      "system": "VCE",
+      "exam": "Mathematical Methods",
+      "year_level": 11,
+      "depth": "core",
+      "required": true
+    },
+    {
+      "system": "AP",
+      "exam": "AP Calculus AB",
+      "year_level": 12,
+      "depth": "core",
+      "required": true
+    },
+    {
+      "system": "IB",
+      "exam": "Mathematics HL",
+      "year_level": 12,
+      "depth": "core",
+      "required": true
+    },
+    {
+      "system": "A_LEVEL",
+      "exam": "A-Level Mathematics",
+      "year_level": 13,
+      "depth": "core",
+      "required": true
+    }
+  ],
+  "created_at": 1735238400000,
+  "updated_at": 1735238400000
+}
