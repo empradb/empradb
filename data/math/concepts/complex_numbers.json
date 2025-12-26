@@ -1,0 +1,123 @@
+[
+  {
+    "id": "complex_numbers",
+    "type": "concept",
+    "title": "Complex Numbers",
+    "latex": "z = a + bi, \\quad i^2 = -1",
+    "description": "Numbers of form a + bi where a and b are real and i is imaginary unit. Extends real number system. Every polynomial has roots in complex numbers.",
+    "domains": ["Algebra", "Complex Analysis"],
+    "tags": ["complex", "imaginary", "number-system"],
+    "complexity": 7,
+    "requires": ["real_numbers", "imaginary_unit"],
+    "generalizes": ["real_numbers"],
+    "special_cases": [],
+    "used_in": ["polynomial_roots", "euler_formula", "fourier_analysis"],
+    "appears_in": [
+      {"system": "VCE", "exam": "Specialist Mathematics", "year_level": 12, "depth": "core", "required": true},
+      {"system": "IB", "exam": "Mathematics HL", "year_level": 12, "depth": "core", "required": true},
+      {"system": "A_LEVEL", "exam": "A-Level Further Mathematics", "year_level": 13, "depth": "core", "required": true}
+    ],
+    "created_at": 1735238400000,
+    "updated_at": 1735238400000
+  },
+  {
+    "id": "imaginary_unit",
+    "type": "concept",
+    "title": "Imaginary Unit",
+    "latex": "i = \\sqrt{-1}, \\quad i^2 = -1",
+    "description": "Fundamental imaginary number defined as square root of -1. Foundation of complex number system. Allows solving x² = -1.",
+    "domains": ["Algebra", "Complex Analysis"],
+    "tags": ["imaginary", "i", "fundamental"],
+    "complexity": 6,
+    "requires": ["square_root", "negative_numbers"],
+    "generalizes": [],
+    "special_cases": [],
+    "used_in": ["complex_numbers", "quadratic_formula"],
+    "appears_in": [
+      {"system": "VCE", "exam": "Specialist Mathematics", "year_level": 12, "depth": "core", "required": true},
+      {"system": "IB", "exam": "Mathematics HL", "year_level": 12, "depth": "core", "required": true}
+    ],
+    "created_at": 1735238400000,
+    "updated_at": 1735238400000
+  },
+  {
+    "id": "complex_conjugate",
+    "type": "concept",
+    "title": "Complex Conjugate",
+    "latex": "\\overline{z} = a - bi \\text{ if } z = a + bi",
+    "description": "Complex number with imaginary part negated. Product of number with conjugate is always real and equals magnitude squared.",
+    "domains": ["Complex Analysis"],
+    "tags": ["complex", "conjugate", "operation"],
+    "complexity": 6,
+    "requires": ["complex_numbers"],
+    "generalizes": [],
+    "special_cases": [],
+    "used_in": ["complex_magnitude", "division_complex", "rationalization"],
+    "appears_in": [
+      {"system": "VCE", "exam": "Specialist Mathematics", "year_level": 12, "depth": "core", "required": true},
+      {"system": "IB", "exam": "Mathematics HL", "year_level": 12, "depth": "core", "required": true}
+    ],
+    "created_at": 1735238400000,
+    "updated_at": 1735238400000
+  },
+  {
+    "id": "complex_magnitude",
+    "type": "concept",
+    "title": "Complex Modulus",
+    "latex": "|z| = \\sqrt{a^2 + b^2} \\text{ if } z = a + bi",
+    "description": "Distance of complex number from origin in complex plane. Always non-negative. Also called absolute value or modulus.",
+    "domains": ["Complex Analysis"],
+    "tags": ["complex", "modulus", "magnitude"],
+    "complexity": 6,
+    "requires": ["complex_numbers", "pythagorean_theorem"],
+    "generalizes": [],
+    "special_cases": [],
+    "used_in": ["complex_polar_form", "triangle_inequality"],
+    "appears_in": [
+      {"system": "VCE", "exam": "Specialist Mathematics", "year_level": 12, "depth": "core", "required": true},
+      {"system": "IB", "exam": "Mathematics HL", "year_level": 12, "depth": "core", "required": true}
+    ],
+    "created_at": 1735238400000,
+    "updated_at": 1735238400000
+  },
+  {
+    "id": "complex_polar_form",
+    "type": "concept",
+    "title": "Polar Form of Complex Numbers",
+    "latex": "z = r(\\cos\\theta + i\\sin\\theta) = re^{i\\theta}",
+    "description": "Representation using magnitude and angle. r is modulus, θ is argument (angle). Useful for multiplication and powers.",
+    "domains": ["Complex Analysis"],
+    "tags": ["complex", "polar", "euler"],
+    "complexity": 8,
+    "requires": ["complex_numbers", "complex_magnitude", "trigonometry"],
+    "generalizes": [],
+    "special_cases": [],
+    "used_in": ["de_moivre_theorem", "complex_multiplication"],
+    "appears_in": [
+      {"system": "VCE", "exam": "Specialist Mathematics", "year_level": 12, "depth": "advanced", "required": true},
+      {"system": "IB", "exam": "Mathematics HL", "year_level": 12, "depth": "core", "required": true}
+    ],
+    "created_at": 1735238400000,
+    "updated_at": 1735238400000
+  },
+  {
+    "id": "euler_formula",
+    "type": "theorem",
+    "title": "Euler's Formula",
+    "latex": "e^{i\\theta} = \\cos\\theta + i\\sin\\theta",
+    "description": "Profound relationship between exponential function and trigonometry. When θ = π, gives Euler's identity: e^(iπ) + 1 = 0.",
+    "domains": ["Complex Analysis", "Analysis"],
+    "tags": ["euler", "complex", "exponential", "fundamental"],
+    "complexity": 9,
+    "requires": ["natural_exponential", "imaginary_unit", "trigonometry"],
+    "generalizes": [],
+    "special_cases": ["euler_identity"],
+    "used_in": ["complex_polar_form", "fourier_analysis", "quantum_mechanics"],
+    "appears_in": [
+      {"system": "IB", "exam": "Mathematics HL", "year_level": 12, "depth": "advanced", "required": false},
+      {"system": "UNIVERSITY", "exam": "Complex Analysis", "year_level": 13, "depth": "core", "required": true}
+    ],
+    "created_at": 1735238400000,
+    "updated_at": 1735238400000
+  }
+]
