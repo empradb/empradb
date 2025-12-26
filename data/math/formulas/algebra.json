@@ -1,0 +1,85 @@
+[
+  {
+    "id": "quadratic_formula",
+    "type": "formula",
+    "title": "Quadratic Formula",
+    "latex": "x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}",
+    "description": "Solves any quadratic equation ax² + bx + c = 0. Provides exact solutions including complex roots. The discriminant (b² - 4ac) determines the nature of solutions.",
+    "domains": ["Algebra", "Equations"],
+    "tags": ["quadratic", "solving", "formula", "roots"],
+    "complexity": 5,
+    "requires": ["algebra_quadratic", "square_root", "fraction"],
+    "generalizes": [],
+    "special_cases": [],
+    "used_in": ["complex_numbers", "discriminant", "completing_square"],
+    "appears_in": [
+      {"system": "VCE", "exam": "Mathematical Methods", "year_level": 10, "depth": "core", "required": true},
+      {"system": "GCSE", "exam": "GCSE Mathematics", "year_level": 11, "depth": "core", "required": true},
+      {"system": "SAT", "exam": "SAT Math", "year_level": 12, "depth": "core", "required": true},
+      {"system": "IB", "exam": "Mathematics SL", "year_level": 11, "depth": "core", "required": true}
+    ],
+    "created_at": 1735238400000,
+    "updated_at": 1735238400000
+  },
+  {
+    "id": "difference_of_squares",
+    "type": "identity",
+    "title": "Difference of Squares",
+    "latex": "a^2 - b^2 = (a+b)(a-b)",
+    "description": "Factorization pattern for the difference between two perfect squares. Fundamental algebraic identity used in simplification and solving equations.",
+    "domains": ["Algebra"],
+    "tags": ["factoring", "identity", "algebra"],
+    "complexity": 3,
+    "requires": ["exponent", "multiplication"],
+    "generalizes": [],
+    "special_cases": [],
+    "used_in": ["factoring", "simplification", "equation_solving"],
+    "appears_in": [
+      {"system": "VCE", "exam": "Mathematical Methods", "year_level": 10, "depth": "core", "required": true},
+      {"system": "GCSE", "exam": "GCSE Mathematics", "year_level": 10, "depth": "core", "required": true}
+    ],
+    "created_at": 1735238400000,
+    "updated_at": 1735238400000
+  },
+  {
+    "id": "binomial_expansion",
+    "type": "formula",
+    "title": "Binomial Theorem",
+    "latex": "(a+b)^n = \\sum_{k=0}^{n} \\binom{n}{k} a^{n-k}b^k",
+    "description": "Expands powers of binomials using binomial coefficients. Generalizes patterns like (a+b)² and (a+b)³.",
+    "domains": ["Algebra", "Combinatorics"],
+    "tags": ["binomial", "expansion", "combination"],
+    "complexity": 7,
+    "requires": ["combination", "exponent", "summation"],
+    "generalizes": [],
+    "special_cases": [],
+    "used_in": ["probability", "series", "approximation"],
+    "appears_in": [
+      {"system": "VCE", "exam": "Specialist Mathematics", "year_level": 12, "depth": "core", "required": true},
+      {"system": "IB", "exam": "Mathematics HL", "year_level": 12, "depth": "core", "required": true}
+    ],
+    "created_at": 1735238400000,
+    "updated_at": 1735238400000
+  },
+  {
+    "id": "slope_formula",
+    "type": "formula",
+    "title": "Slope Formula",
+    "latex": "m = \\frac{y_2 - y_1}{x_2 - x_1}",
+    "description": "Calculates the slope (rate of change) between two points. Rise over run. Foundation for linear functions and calculus.",
+    "domains": ["Algebra", "Geometry"],
+    "tags": ["slope", "linear", "rate-of-change"],
+    "complexity": 3,
+    "requires": ["coordinate_plane", "subtraction", "fraction"],
+    "generalizes": [],
+    "special_cases": [],
+    "used_in": ["linear_function", "calculus_derivative", "tangent_line"],
+    "appears_in": [
+      {"system": "VCE", "exam": "Mathematical Methods", "year_level": 10, "depth": "core", "required": true},
+      {"system": "GCSE", "exam": "GCSE Mathematics", "year_level": 10, "depth": "core", "required": true},
+      {"system": "SAT", "exam": "SAT Math", "year_level": 12, "depth": "core", "required": true}
+    ],
+    "created_at": 1735238400000,
+    "updated_at": 1735238400000
+  }
+]
