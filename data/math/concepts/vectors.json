@@ -1,0 +1,103 @@
+[
+  {
+    "id": "vector",
+    "type": "concept",
+    "title": "Vector",
+    "latex": "\\vec{v} = \\begin{pmatrix} x \\\\ y \\end{pmatrix}",
+    "description": "Quantity with both magnitude and direction. Represented as ordered list of numbers. Fundamental in physics, geometry, and linear algebra.",
+    "domains": ["Linear Algebra", "Geometry", "Physics"],
+    "tags": ["vector", "magnitude", "direction", "fundamental"],
+    "complexity": 5,
+    "requires": ["coordinate_plane", "ordered_pair"],
+    "generalizes": [],
+    "special_cases": ["unit_vector", "zero_vector"],
+    "used_in": ["vector_addition", "dot_product", "cross_product", "physics"],
+    "appears_in": [
+      {"system": "VCE", "exam": "Specialist Mathematics", "year_level": 12, "depth": "core", "required": true},
+      {"system": "IB", "exam": "Mathematics HL", "year_level": 12, "depth": "core", "required": true},
+      {"system": "A_LEVEL", "exam": "A-Level Mathematics", "year_level": 13, "depth": "core", "required": true}
+    ],
+    "created_at": 1735238400000,
+    "updated_at": 1735238400000
+  },
+  {
+    "id": "vector_magnitude",
+    "type": "concept",
+    "title": "Vector Magnitude",
+    "latex": "|\\vec{v}| = \\sqrt{x^2 + y^2}",
+    "description": "Length of a vector. Calculated using Pythagorean theorem in 2D, extends to higher dimensions. Always non-negative.",
+    "domains": ["Linear Algebra", "Geometry"],
+    "tags": ["vector", "magnitude", "length", "norm"],
+    "complexity": 5,
+    "requires": ["vector", "pythagorean_theorem", "square_root"],
+    "generalizes": [],
+    "special_cases": [],
+    "used_in": ["unit_vector", "distance", "normalization"],
+    "appears_in": [
+      {"system": "VCE", "exam": "Specialist Mathematics", "year_level": 12, "depth": "core", "required": true},
+      {"system": "IB", "exam": "Mathematics HL", "year_level": 12, "depth": "core", "required": true}
+    ],
+    "created_at": 1735238400000,
+    "updated_at": 1735238400000
+  },
+  {
+    "id": "dot_product",
+    "type": "concept",
+    "title": "Dot Product",
+    "latex": "\\vec{a} \\cdot \\vec{b} = |\\vec{a}||\\vec{b}|\\cos\\theta",
+    "description": "Scalar product of two vectors. Measures how much one vector extends in direction of another. Returns a scalar, not a vector.",
+    "domains": ["Linear Algebra", "Geometry"],
+    "tags": ["vector", "dot-product", "scalar-product"],
+    "complexity": 6,
+    "requires": ["vector", "vector_magnitude", "cos_function"],
+    "generalizes": [],
+    "special_cases": [],
+    "used_in": ["projection", "angle_between_vectors", "orthogonality"],
+    "appears_in": [
+      {"system": "VCE", "exam": "Specialist Mathematics", "year_level": 12, "depth": "core", "required": true},
+      {"system": "IB", "exam": "Mathematics HL", "year_level": 12, "depth": "core", "required": true}
+    ],
+    "created_at": 1735238400000,
+    "updated_at": 1735238400000
+  },
+  {
+    "id": "cross_product",
+    "type": "concept",
+    "title": "Cross Product",
+    "latex": "\\vec{a} \\times \\vec{b} = |\\vec{a}||\\vec{b}|\\sin\\theta\\,\\hat{n}",
+    "description": "Vector product of two 3D vectors. Result is perpendicular to both input vectors. Magnitude equals area of parallelogram formed by vectors.",
+    "domains": ["Linear Algebra", "Geometry", "Physics"],
+    "tags": ["vector", "cross-product", "perpendicular"],
+    "complexity": 7,
+    "requires": ["vector", "vector_magnitude", "sin_function"],
+    "generalizes": [],
+    "special_cases": [],
+    "used_in": ["torque", "angular_momentum", "normal_vector"],
+    "appears_in": [
+      {"system": "VCE", "exam": "Specialist Mathematics", "year_level": 12, "depth": "advanced", "required": false},
+      {"system": "IB", "exam": "Mathematics HL", "year_level": 12, "depth": "core", "required": true}
+    ],
+    "created_at": 1735238400000,
+    "updated_at": 1735238400000
+  },
+  {
+    "id": "unit_vector",
+    "type": "concept",
+    "title": "Unit Vector",
+    "latex": "\\hat{v} = \\frac{\\vec{v}}{|\\vec{v}|}",
+    "description": "Vector with magnitude 1. Points in same direction as original vector but normalized to length 1. Used to indicate pure direction.",
+    "domains": ["Linear Algebra", "Geometry"],
+    "tags": ["vector", "unit", "normalization"],
+    "complexity": 5,
+    "requires": ["vector", "vector_magnitude", "division"],
+    "generalizes": ["vector"],
+    "special_cases": [],
+    "used_in": ["direction", "basis_vectors", "normalization"],
+    "appears_in": [
+      {"system": "VCE", "exam": "Specialist Mathematics", "year_level": 12, "depth": "core", "required": true},
+      {"system": "IB", "exam": "Mathematics HL", "year_level": 12, "depth": "core", "required": true}
+    ],
+    "created_at": 1735238400000,
+    "updated_at": 1735238400000
+  }
+]
