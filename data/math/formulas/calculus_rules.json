@@ -1,0 +1,85 @@
+[
+  {
+    "id": "product_rule",
+    "type": "formula",
+    "title": "Product Rule",
+    "latex": "(fg)' = f'g + fg'",
+    "description": "Rule for differentiating the product of two functions. States that the derivative of a product is the first function times the derivative of the second, plus the second function times the derivative of the first.",
+    "domains": ["Calculus", "Differentiation"],
+    "tags": ["differentiation", "calculus", "derivative-rule"],
+    "complexity": 5,
+    "requires": ["calculus_derivative", "function"],
+    "generalizes": [],
+    "special_cases": [],
+    "used_in": ["chain_rule", "integration_by_parts", "implicit_differentiation"],
+    "appears_in": [
+      {"system": "VCE", "exam": "Mathematical Methods", "year_level": 11, "depth": "core", "required": true},
+      {"system": "AP", "exam": "AP Calculus AB", "year_level": 12, "depth": "core", "required": true},
+      {"system": "IB", "exam": "Mathematics HL", "year_level": 12, "depth": "core", "required": true}
+    ],
+    "created_at": 1735238400000,
+    "updated_at": 1735238400000
+  },
+  {
+    "id": "chain_rule",
+    "type": "formula",
+    "title": "Chain Rule",
+    "latex": "\\frac{d}{dx}f(g(x)) = f'(g(x)) \\cdot g'(x)",
+    "description": "Rule for differentiating composite functions. The derivative of f(g(x)) is the derivative of the outer function evaluated at the inner function, multiplied by the derivative of the inner function.",
+    "domains": ["Calculus", "Differentiation"],
+    "tags": ["differentiation", "calculus", "derivative-rule", "composition"],
+    "complexity": 6,
+    "requires": ["calculus_derivative", "function", "composition"],
+    "generalizes": [],
+    "special_cases": [],
+    "used_in": ["implicit_differentiation", "related_rates", "optimization"],
+    "appears_in": [
+      {"system": "VCE", "exam": "Mathematical Methods", "year_level": 11, "depth": "core", "required": true},
+      {"system": "AP", "exam": "AP Calculus AB", "year_level": 12, "depth": "core", "required": true},
+      {"system": "IB", "exam": "Mathematics HL", "year_level": 12, "depth": "core", "required": true}
+    ],
+    "created_at": 1735238400000,
+    "updated_at": 1735238400000
+  },
+  {
+    "id": "quotient_rule",
+    "type": "formula",
+    "title": "Quotient Rule",
+    "latex": "\\left(\\frac{f}{g}\\right)' = \\frac{f'g - fg'}{g^2}",
+    "description": "Rule for differentiating the quotient of two functions. Low d-high minus high d-low, all over the square of what's below.",
+    "domains": ["Calculus", "Differentiation"],
+    "tags": ["differentiation", "calculus", "derivative-rule"],
+    "complexity": 6,
+    "requires": ["calculus_derivative", "function"],
+    "generalizes": [],
+    "special_cases": [],
+    "used_in": ["implicit_differentiation", "rational_functions"],
+    "appears_in": [
+      {"system": "VCE", "exam": "Mathematical Methods", "year_level": 11, "depth": "core", "required": true},
+      {"system": "AP", "exam": "AP Calculus AB", "year_level": 12, "depth": "core", "required": true}
+    ],
+    "created_at": 1735238400000,
+    "updated_at": 1735238400000
+  },
+  {
+    "id": "power_rule",
+    "type": "formula",
+    "title": "Power Rule",
+    "latex": "\\frac{d}{dx}x^n = nx^{n-1}",
+    "description": "Basic differentiation rule for power functions. Bring down the exponent and reduce the power by one.",
+    "domains": ["Calculus", "Differentiation"],
+    "tags": ["differentiation", "calculus", "derivative-rule", "fundamental"],
+    "complexity": 3,
+    "requires": ["calculus_derivative", "exponent"],
+    "generalizes": [],
+    "special_cases": [],
+    "used_in": ["polynomial_differentiation", "chain_rule"],
+    "appears_in": [
+      {"system": "VCE", "exam": "Mathematical Methods", "year_level": 11, "depth": "core", "required": true},
+      {"system": "AP", "exam": "AP Calculus AB", "year_level": 12, "depth": "core", "required": true},
+      {"system": "IB", "exam": "Mathematics HL", "year_level": 11, "depth": "core", "required": true}
+    ],
+    "created_at": 1735238400000,
+    "updated_at": 1735238400000
+  }
+]
