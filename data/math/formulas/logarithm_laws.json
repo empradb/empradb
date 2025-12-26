@@ -1,0 +1,104 @@
+[
+  {
+    "id": "log_product_law",
+    "type": "formula",
+    "title": "Logarithm Product Law",
+    "latex": "\\log_b(xy) = \\log_b(x) + \\log_b(y)",
+    "description": "The logarithm of a product equals the sum of the logarithms. Fundamental property for simplifying logarithmic expressions.",
+    "domains": ["Algebra", "Logarithms"],
+    "tags": ["logarithm", "law", "product", "simplification"],
+    "complexity": 5,
+    "requires": ["logarithm"],
+    "generalizes": [],
+    "special_cases": [],
+    "used_in": ["log_simplification", "exponential_equations"],
+    "appears_in": [
+      {"system": "VCE", "exam": "Mathematical Methods", "year_level": 11, "depth": "core", "required": true},
+      {"system": "IB", "exam": "Mathematics SL", "year_level": 11, "depth": "core", "required": true}
+    ],
+    "created_at": 1735238400000,
+    "updated_at": 1735238400000
+  },
+  {
+    "id": "log_quotient_law",
+    "type": "formula",
+    "title": "Logarithm Quotient Law",
+    "latex": "\\log_b\\left(\\frac{x}{y}\\right) = \\log_b(x) - \\log_b(y)",
+    "description": "The logarithm of a quotient equals the difference of the logarithms. Used for simplifying division inside logarithms.",
+    "domains": ["Algebra", "Logarithms"],
+    "tags": ["logarithm", "law", "quotient", "simplification"],
+    "complexity": 5,
+    "requires": ["logarithm"],
+    "generalizes": [],
+    "special_cases": [],
+    "used_in": ["log_simplification", "exponential_equations"],
+    "appears_in": [
+      {"system": "VCE", "exam": "Mathematical Methods", "year_level": 11, "depth": "core", "required": true},
+      {"system": "IB", "exam": "Mathematics SL", "year_level": 11, "depth": "core", "required": true}
+    ],
+    "created_at": 1735238400000,
+    "updated_at": 1735238400000
+  },
+  {
+    "id": "log_power_law",
+    "type": "formula",
+    "title": "Logarithm Power Law",
+    "latex": "\\log_b(x^n) = n\\log_b(x)",
+    "description": "The logarithm of a power equals the exponent times the logarithm. Most useful law for solving exponential equations.",
+    "domains": ["Algebra", "Logarithms"],
+    "tags": ["logarithm", "law", "power", "simplification"],
+    "complexity": 5,
+    "requires": ["logarithm", "exponent"],
+    "generalizes": [],
+    "special_cases": [],
+    "used_in": ["exponential_equations", "integration", "differentiation"],
+    "appears_in": [
+      {"system": "VCE", "exam": "Mathematical Methods", "year_level": 11, "depth": "core", "required": true},
+      {"system": "IB", "exam": "Mathematics SL", "year_level": 11, "depth": "core", "required": true},
+      {"system": "A_LEVEL", "exam": "A-Level Mathematics", "year_level": 12, "depth": "core", "required": true}
+    ],
+    "created_at": 1735238400000,
+    "updated_at": 1735238400000
+  },
+  {
+    "id": "log_change_of_base",
+    "type": "formula",
+    "title": "Change of Base Formula",
+    "latex": "\\log_b(x) = \\frac{\\log_c(x)}{\\log_c(b)}",
+    "description": "Converts logarithm from one base to another. Allows calculation of any logarithm using only common or natural logarithms.",
+    "domains": ["Algebra", "Logarithms"],
+    "tags": ["logarithm", "change-of-base", "conversion"],
+    "complexity": 6,
+    "requires": ["logarithm", "division"],
+    "generalizes": [],
+    "special_cases": [],
+    "used_in": ["calculator_computation", "base_conversion"],
+    "appears_in": [
+      {"system": "VCE", "exam": "Mathematical Methods", "year_level": 11, "depth": "core", "required": true},
+      {"system": "IB", "exam": "Mathematics SL", "year_level": 11, "depth": "core", "required": true}
+    ],
+    "created_at": 1735238400000,
+    "updated_at": 1735238400000
+  },
+  {
+    "id": "exponent_laws",
+    "type": "formula",
+    "title": "Laws of Exponents",
+    "latex": "a^m \\cdot a^n = a^{m+n}, \\quad \\frac{a^m}{a^n} = a^{m-n}, \\quad (a^m)^n = a^{mn}",
+    "description": "Fundamental rules for manipulating exponential expressions. Foundation for understanding exponential and logarithmic functions.",
+    "domains": ["Algebra"],
+    "tags": ["exponent", "power", "law", "fundamental"],
+    "complexity": 4,
+    "requires": ["exponent", "multiplication", "division"],
+    "generalizes": [],
+    "special_cases": [],
+    "used_in": ["exponential_function", "logarithm", "simplification"],
+    "appears_in": [
+      {"system": "VCE", "exam": "Mathematical Methods", "year_level": 10, "depth": "core", "required": true},
+      {"system": "GCSE", "exam": "GCSE Mathematics", "year_level": 10, "depth": "core", "required": true},
+      {"system": "SAT", "exam": "SAT Math", "year_level": 12, "depth": "core", "required": true}
+    ],
+    "created_at": 1735238400000,
+    "updated_at": 1735238400000
+  }
+]
