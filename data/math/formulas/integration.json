@@ -1,0 +1,127 @@
+[
+  {
+    "id": "definite_integral",
+    "type": "concept",
+    "title": "Definite Integral",
+    "latex": "\\int_a^b f(x)\\,dx",
+    "description": "Signed area under curve from a to b. Represents accumulation of quantity. Has specific numerical value.",
+    "domains": ["Calculus", "Integration"],
+    "tags": ["integral", "area", "accumulation"],
+    "complexity": 7,
+    "requires": ["antiderivative", "calculus_limit"],
+    "generalizes": [],
+    "special_cases": [],
+    "used_in": ["fundamental_theorem_calculus", "area_under_curve", "physics"],
+    "appears_in": [
+      {"system": "VCE", "exam": "Mathematical Methods", "year_level": 12, "depth": "core", "required": true},
+      {"system": "AP", "exam": "AP Calculus AB", "year_level": 12, "depth": "core", "required": true},
+      {"system": "IB", "exam": "Mathematics HL", "year_level": 12, "depth": "core", "required": true}
+    ],
+    "created_at": 1735238400000,
+    "updated_at": 1735238400000
+  },
+  {
+    "id": "fundamental_theorem_calculus",
+    "type": "theorem",
+    "title": "Fundamental Theorem of Calculus",
+    "latex": "\\int_a^b f(x)\\,dx = F(b) - F(a) \\text{ where } F'(x) = f(x)",
+    "description": "Links differentiation and integration. To evaluate definite integral, find antiderivative and subtract values at endpoints. Most important theorem in calculus.",
+    "domains": ["Calculus"],
+    "tags": ["fundamental", "calculus", "theorem", "integration"],
+    "complexity": 8,
+    "requires": ["definite_integral", "antiderivative", "calculus_derivative"],
+    "generalizes": [],
+    "special_cases": [],
+    "used_in": ["definite_integration", "area_calculation", "physics_applications"],
+    "appears_in": [
+      {"system": "VCE", "exam": "Mathematical Methods", "year_level": 12, "depth": "core", "required": true},
+      {"system": "AP", "exam": "AP Calculus AB", "year_level": 12, "depth": "core", "required": true},
+      {"system": "IB", "exam": "Mathematics HL", "year_level": 12, "depth": "core", "required": true}
+    ],
+    "created_at": 1735238400000,
+    "updated_at": 1735238400000
+  },
+  {
+    "id": "u_substitution",
+    "type": "formula",
+    "title": "U-Substitution",
+    "latex": "\\int f(g(x))g'(x)\\,dx = \\int f(u)\\,du \\text{ where } u = g(x)",
+    "description": "Integration technique reversing chain rule. Simplifies integral by substituting part of integrand with new variable.",
+    "domains": ["Calculus", "Integration"],
+    "tags": ["integration", "substitution", "technique"],
+    "complexity": 7,
+    "requires": ["antiderivative", "chain_rule"],
+    "generalizes": [],
+    "special_cases": [],
+    "used_in": ["complex_integrals", "definite_integrals"],
+    "appears_in": [
+      {"system": "VCE", "exam": "Mathematical Methods", "year_level": 12, "depth": "core", "required": true},
+      {"system": "AP", "exam": "AP Calculus AB", "year_level": 12, "depth": "core", "required": true},
+      {"system": "IB", "exam": "Mathematics HL", "year_level": 12, "depth": "core", "required": true}
+    ],
+    "created_at": 1735238400000,
+    "updated_at": 1735238400000
+  },
+  {
+    "id": "integration_by_parts",
+    "type": "formula",
+    "title": "Integration by Parts",
+    "latex": "\\int u\\,dv = uv - \\int v\\,du",
+    "description": "Integration technique reversing product rule. Used when integrand is product of two functions.",
+    "domains": ["Calculus", "Integration"],
+    "tags": ["integration", "parts", "technique", "product"],
+    "complexity": 8,
+    "requires": ["antiderivative", "product_rule"],
+    "generalizes": [],
+    "special_cases": [],
+    "used_in": ["complex_integrals", "reduction_formulas"],
+    "appears_in": [
+      {"system": "VCE", "exam": "Specialist Mathematics", "year_level": 12, "depth": "core", "required": true},
+      {"system": "AP", "exam": "AP Calculus BC", "year_level": 12, "depth": "core", "required": true},
+      {"system": "IB", "exam": "Mathematics HL", "year_level": 12, "depth": "core", "required": true}
+    ],
+    "created_at": 1735238400000,
+    "updated_at": 1735238400000
+  },
+  {
+    "id": "power_rule_integration",
+    "type": "formula",
+    "title": "Power Rule (Integration)",
+    "latex": "\\int x^n\\,dx = \\frac{x^{n+1}}{n+1} + C, \\quad n \\neq -1",
+    "description": "Basic integration rule for power functions. Reverse of power rule for differentiation. Fails when n = -1 (use ln instead).",
+    "domains": ["Calculus", "Integration"],
+    "tags": ["integration", "power-rule", "fundamental"],
+    "complexity": 5,
+    "requires": ["antiderivative", "power_rule"],
+    "generalizes": [],
+    "special_cases": [],
+    "used_in": ["polynomial_integration", "basic_integration"],
+    "appears_in": [
+      {"system": "VCE", "exam": "Mathematical Methods", "year_level": 12, "depth": "core", "required": true},
+      {"system": "AP", "exam": "AP Calculus AB", "year_level": 12, "depth": "core", "required": true},
+      {"system": "IB", "exam": "Mathematics HL", "year_level": 12, "depth": "core", "required": true}
+    ],
+    "created_at": 1735238400000,
+    "updated_at": 1735238400000
+  },
+  {
+    "id": "area_under_curve",
+    "type": "concept",
+    "title": "Area Under Curve",
+    "latex": "A = \\int_a^b f(x)\\,dx",
+    "description": "Definite integral represents signed area between curve and x-axis. Positive above axis, negative below.",
+    "domains": ["Calculus", "Geometry"],
+    "tags": ["area", "integral", "application"],
+    "complexity": 6,
+    "requires": ["definite_integral", "area"],
+    "generalizes": [],
+    "special_cases": [],
+    "used_in": ["volume_of_revolution", "physics_applications"],
+    "appears_in": [
+      {"system": "VCE", "exam": "Mathematical Methods", "year_level": 12, "depth": "core", "required": true},
+      {"system": "AP", "exam": "AP Calculus AB", "year_level": 12, "depth": "core", "required": true}
+    ],
+    "created_at": 1735238400000,
+    "updated_at": 1735238400000
+  }
+]
