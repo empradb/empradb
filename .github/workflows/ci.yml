@@ -1,0 +1,197 @@
+name: CI
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main, develop ]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          cache: 'npm'
+      
+      - name: Install dependencies
+        run: npm install
+      
+      - name: Run linter
+        run: npm run lint
+
+  build:
+    runs-on: ubuntu-latest
+    needs: lint
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          cache: 'npm'
+      
+      - name: Install dependencies
+        run: npm install
+      
+      - name: Build packages
+        run: npm run build
+      
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: build-artifacts
+          path: |
+            packages/*/dist
+            apps/*/dist
+            apps/web/.next
+
+  validate:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          cache: 'npm'
+      
+      - name: Install dependencies
+        run: npm install
+      
+      - name: Build packages
+        run: npm run build
+      
+      - name: Validate graph data
+        run: npm run validate:graph
+      
+      - name: Build indexes
+        run: npm run build:index
+
+  test:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          cache: 'npm'
+      
+      - name: Install dependencies
+        run: npm install
+      
+      - name: Run tests
+        run: npm run test
+
+  data-quality:
+    runs-on: ubuntu-latest
+    needs: validate
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          cache: 'npm'
+      
+      - name: Install dependencies
+        run: npm install
+      
+      - name: Build packages
+        run: npm run build
+      
+      - name: Check for cycles
+        run: |
+          npm run validate:graph
+          if [ $? -ne 0 ]; then
+            echo "Graph validation failed - cycles detected"
+            exit 1
+          fi
+      
+      - name: Verify node completeness
+        run: |
+          node -e "
+          const fs = require('fs');
+          const path = require('path');
+          
+          function checkNode(node) {
+            const issues = [];
+            if (!node.title || node.title.trim() === '') issues.push('Missing title');
+            if (!node.description || node.description.trim() === '') issues.push('Missing description');
+            if (!node.domains || node.domains.length === 0) issues.push('No domains');
+            if (node.complexity < 0 || node.complexity > 10) issues.push('Invalid complexity');
+            return issues;
+          }
+          
+          const dataDir = path.join(process.cwd(), 'data/math');
+          const subdirs = ['concepts', 'formulas', 'theorems'];
+          let totalIssues = 0;
+          
+          for (const subdir of subdirs) {
+            const subdirPath = path.join(dataDir, subdir);
+            if (!fs.existsSync(subdirPath)) continue;
+            
+            const files = fs.readdirSync(subdirPath).filter(f => f.endsWith('.json'));
+            for (const file of files) {
+              const filePath = path.join(subdirPath, file);
+              const content = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
+              const nodes = Array.isArray(content) ? content : [content];
+              
+              for (const node of nodes) {
+                const issues = checkNode(node);
+                if (issues.length > 0) {
+                  console.log(\`Node \${node.id}: \${issues.join(', ')}\`);
+                  totalIssues += issues.length;
+                }
+              }
+            }
+          }
+          
+          if (totalIssues > 0) {
+            console.log(\`\nTotal issues found: \${totalIssues}\`);
+            process.exit(1);
+          } else {
+            console.log('All nodes pass quality checks');
+          }
+          "
+
+  deploy-preview:
+    runs-on: ubuntu-latest
+    needs: [test, validate, data-quality]
+    if: github.event_name == 'pull_request'
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          cache: 'npm'
+      
+      - name: Install dependencies
+        run: npm install
+      
+      - name: Build for production
+        run: npm run build
+      
+      - name: Comment PR
+        uses: actions/github-script@v6
+        with:
+          script: |
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: '✅ Build successful! All checks passed.'
+            })
