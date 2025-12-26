@@ -1,0 +1,52 @@
+{
+  "id": "ib_mathematics_hl",
+  "system": "IB",
+  "year_level": 12,
+  "name": "IB Mathematics HL",
+  "description": "International Baccalaureate Mathematics Higher Level covering advanced algebra, calculus, statistics, and discrete mathematics.",
+  "concepts": [
+    "function",
+    "linear_function",
+    "algebra_quadratic",
+    "polynomial",
+    "exponential_function",
+    "logarithm",
+    "sin_function",
+    "cos_function",
+    "tan_function",
+    "pythagorean_identity",
+    "law_of_sines",
+    "law_of_cosines",
+    "calculus_limit",
+    "continuity",
+    "calculus_derivative",
+    "power_rule",
+    "product_rule",
+    "quotient_rule",
+    "chain_rule",
+    "antiderivative",
+    "definite_integral",
+    "fundamental_theorem_calculus",
+    "vector",
+    "matrix",
+    "complex_numbers",
+    "binomial_expansion",
+    "sequence",
+    "series",
+    "probability",
+    "statistics"
+  ],
+  "optional_concepts": [
+    "implicit_differentiation",
+    "parametric_equations",
+    "polar_coordinates",
+    "differential_equations"
+  ],
+  "excluded_concepts": [
+    "fourier_transform",
+    "laplace_transform",
+    "topology",
+    "abstract_algebra"
+  ],
+  "estimated_hours": 300
+}
