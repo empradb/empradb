@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-gray-800;
+  }
+  
+  body {
+    @apply bg-black text-white;
+  }
+}
+
+.katex {
+  font-size: 1.1em;
+}
+
+.katex-display {
+  margin: 1.5rem 0;
+}
+
+.concept-card {
+  @apply bg-gray-900 border border-gray-800 rounded-lg p-4 hover:border-gray-700 transition cursor-pointer;
+}
+
+.concept-card:hover {
+  @apply bg-gray-800;
+}
+
+.search-input {
+  @apply w-full bg-gray-900 border border-gray-800 rounded-lg px-4 py-3 text-white placeholder-gray-600 focus:outline-none focus:border-gray-700;
+}
+
+.button-primary {
+  @apply bg-white text-black px-4 py-2 rounded-lg font-medium hover:bg-gray-200 transition;
+}
+
+.button-secondary {
+  @apply bg-gray-900 text-white px-4 py-2 rounded-lg font-medium border border-gray-800 hover:bg-gray-800 transition;
+}
+
+.tag {
+  @apply inline-block bg-gray-900 text-gray-400 text-xs px-2 py-1 rounded mr-2 mb-2;
+}
+
+.domain-tag {
+  @apply inline-block bg-gray-800 text-white text-xs px-2 py-1 rounded mr-2 mb-2;
+}
+
+.confidence-bar {
+  @apply w-full h-1 bg-gray-900 rounded-full overflow-hidden;
+}
+
+.confidence-fill {
+  @apply h-full bg-white transition-all duration-300;
+}
+
+.graph-node {
+  @apply fill-gray-900 stroke-white stroke-1;
+}
+
+.graph-edge {
+  @apply stroke-gray-700 stroke-1;
+}
+
+.math-formula {
+  @apply text-center my-4;
+}
+
+.section-title {
+  @apply text-2xl font-bold mb-4;
+}
+
+.subsection-title {
+  @apply text-lg font-semibold mb-3;
+}
+
+.card {
+  @apply bg-gray-900 border border-gray-800 rounded-lg p-6;
+}
+
+.divider {
+  @apply border-t border-gray-800 my-6;
+}
