@@ -1,0 +1,39 @@
+{
+  "id": "vce_methods_year11",
+  "system": "VCE",
+  "year_level": 11,
+  "name": "VCE Mathematical Methods Units 1 & 2",
+  "description": "Year 11 Mathematical Methods covering functions, algebra, calculus, and probability.",
+  "concepts": [
+    "function",
+    "linear_function",
+    "quadratic_function",
+    "polynomial",
+    "exponential_function",
+    "logarithm",
+    "calculus_limit",
+    "calculus_derivative",
+    "product_rule",
+    "chain_rule",
+    "quotient_rule",
+    "antiderivative",
+    "definite_integral",
+    "probability",
+    "counting_principle",
+    "permutation",
+    "combination"
+  ],
+  "optional_concepts": [
+    "implicit_differentiation",
+    "related_rates",
+    "optimization"
+  ],
+  "excluded_concepts": [
+    "partial_derivative",
+    "multivariable_calculus",
+    "differential_equations",
+    "fourier_transform",
+    "laplace_transform"
+  ],
+  "estimated_hours": 240
+}
