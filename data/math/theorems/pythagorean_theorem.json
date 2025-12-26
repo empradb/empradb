@@ -1,0 +1,46 @@
+{
+  "id": "pythagorean_theorem",
+  "type": "theorem",
+  "title": "Pythagorean Theorem",
+  "latex": "a^2 + b^2 = c^2",
+  "description": "In a right triangle, the square of the hypotenuse equals the sum of squares of the other two sides. One of the most fundamental theorems in geometry with applications across mathematics and physics.",
+  "domains": ["Geometry", "Trigonometry"],
+  "tags": ["fundamental", "geometry", "triangle", "right-triangle"],
+  "complexity": 3,
+  "requires": ["right_triangle", "square", "addition"],
+  "generalizes": ["law_of_cosines"],
+  "special_cases": [],
+  "used_in": ["distance_formula", "trigonometric_identities", "vector_magnitude"],
+  "appears_in": [
+    {
+      "system": "VCE",
+      "exam": "General Mathematics",
+      "year_level": 10,
+      "depth": "core",
+      "required": true
+    },
+    {
+      "system": "GCSE",
+      "exam": "GCSE Mathematics",
+      "year_level": 11,
+      "depth": "core",
+      "required": true
+    },
+    {
+      "system": "SAT",
+      "exam": "SAT Math",
+      "year_level": 12,
+      "depth": "core",
+      "required": true
+    },
+    {
+      "system": "IB",
+      "exam": "Mathematics SL",
+      "year_level": 11,
+      "depth": "core",
+      "required": true
+    }
+  ],
+  "created_at": 1735238400000,
+  "updated_at": 1735238400000
+}
