@@ -1,0 +1,84 @@
+[
+  {
+    "id": "sin_function",
+    "type": "concept",
+    "title": "Sine Function",
+    "latex": "\\sin\\theta = \\frac{\\text{opposite}}{\\text{hypotenuse}}",
+    "description": "Trigonometric function relating an angle to the ratio of opposite side to hypotenuse in a right triangle. On the unit circle, sine is the y-coordinate.",
+    "domains": ["Trigonometry"],
+    "tags": ["trigonometry", "sine", "fundamental", "function"],
+    "complexity": 5,
+    "requires": ["right_triangle", "unit_circle", "angle"],
+    "generalizes": [],
+    "special_cases": [],
+    "used_in": ["pythagorean_identity", "sin_wave", "fourier_series"],
+    "appears_in": [
+      {"system": "VCE", "exam": "Mathematical Methods", "year_level": 11, "depth": "core", "required": true},
+      {"system": "GCSE", "exam": "GCSE Mathematics", "year_level": 11, "depth": "core", "required": true},
+      {"system": "IB", "exam": "Mathematics SL", "year_level": 11, "depth": "core", "required": true}
+    ],
+    "created_at": 1735238400000,
+    "updated_at": 1735238400000
+  },
+  {
+    "id": "cos_function",
+    "type": "concept",
+    "title": "Cosine Function",
+    "latex": "\\cos\\theta = \\frac{\\text{adjacent}}{\\text{hypotenuse}}",
+    "description": "Trigonometric function relating an angle to the ratio of adjacent side to hypotenuse in a right triangle. On the unit circle, cosine is the x-coordinate.",
+    "domains": ["Trigonometry"],
+    "tags": ["trigonometry", "cosine", "fundamental", "function"],
+    "complexity": 5,
+    "requires": ["right_triangle", "unit_circle", "angle"],
+    "generalizes": [],
+    "special_cases": [],
+    "used_in": ["pythagorean_identity", "cos_wave", "dot_product"],
+    "appears_in": [
+      {"system": "VCE", "exam": "Mathematical Methods", "year_level": 11, "depth": "core", "required": true},
+      {"system": "GCSE", "exam": "GCSE Mathematics", "year_level": 11, "depth": "core", "required": true},
+      {"system": "IB", "exam": "Mathematics SL", "year_level": 11, "depth": "core", "required": true}
+    ],
+    "created_at": 1735238400000,
+    "updated_at": 1735238400000
+  },
+  {
+    "id": "tan_function",
+    "type": "concept",
+    "title": "Tangent Function",
+    "latex": "\\tan\\theta = \\frac{\\sin\\theta}{\\cos\\theta} = \\frac{\\text{opposite}}{\\text{adjacent}}",
+    "description": "Trigonometric function equal to sine divided by cosine. Represents the slope of the line from origin to a point on the unit circle.",
+    "domains": ["Trigonometry"],
+    "tags": ["trigonometry", "tangent", "function"],
+    "complexity": 5,
+    "requires": ["sin_function", "cos_function", "right_triangle"],
+    "generalizes": [],
+    "special_cases": [],
+    "used_in": ["inverse_trig", "angle_of_elevation"],
+    "appears_in": [
+      {"system": "VCE", "exam": "Mathematical Methods", "year_level": 11, "depth": "core", "required": true},
+      {"system": "GCSE", "exam": "GCSE Mathematics", "year_level": 11, "depth": "core", "required": true}
+    ],
+    "created_at": 1735238400000,
+    "updated_at": 1735238400000
+  },
+  {
+    "id": "radian",
+    "type": "concept",
+    "title": "Radian Measure",
+    "latex": "1\\text{ rad} = \\frac{180^\\circ}{\\pi}",
+    "description": "Angle measure based on arc length. One radian is the angle subtended by an arc equal in length to the radius. Natural unit for calculus.",
+    "domains": ["Trigonometry", "Geometry"],
+    "tags": ["angle", "radian", "measurement"],
+    "complexity": 4,
+    "requires": ["circle", "arc_length", "angle"],
+    "generalizes": [],
+    "special_cases": [],
+    "used_in": ["calculus_derivative", "trigonometry", "angular_velocity"],
+    "appears_in": [
+      {"system": "VCE", "exam": "Mathematical Methods", "year_level": 11, "depth": "core", "required": true},
+      {"system": "AP", "exam": "AP Calculus AB", "year_level": 12, "depth": "core", "required": true}
+    ],
+    "created_at": 1735238400000,
+    "updated_at": 1735238400000
+  }
+]
