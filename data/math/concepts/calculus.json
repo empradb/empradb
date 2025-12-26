@@ -1,0 +1,85 @@
+[
+  {
+    "id": "calculus_limit",
+    "type": "concept",
+    "title": "Limit",
+    "latex": "\\lim_{x \\to a} f(x) = L",
+    "description": "The value that a function approaches as the input approaches some value. Fundamental concept in calculus that enables the rigorous definition of continuity, derivatives, and integrals.",
+    "domains": ["Calculus", "Analysis"],
+    "tags": ["fundamental", "calculus", "analysis", "foundation"],
+    "complexity": 6,
+    "requires": ["function", "real_numbers", "inequality"],
+    "generalizes": [],
+    "special_cases": ["one_sided_limit", "limit_at_infinity"],
+    "used_in": ["derivative", "continuity", "integral"],
+    "appears_in": [
+      {"system": "VCE", "exam": "Mathematical Methods", "year_level": 11, "depth": "core", "required": true},
+      {"system": "AP", "exam": "AP Calculus AB", "year_level": 12, "depth": "core", "required": true},
+      {"system": "IB", "exam": "Mathematics HL", "year_level": 12, "depth": "core", "required": true}
+    ],
+    "created_at": 1735238400000,
+    "updated_at": 1735238400000
+  },
+  {
+    "id": "calculus_derivative",
+    "type": "concept",
+    "title": "Derivative",
+    "latex": "f'(x) = \\lim_{h \\to 0} \\frac{f(x+h) - f(x)}{h}",
+    "description": "The instantaneous rate of change of a function at a point. Measures how a function changes as its input changes. Foundation for differential calculus and optimization.",
+    "domains": ["Calculus", "Analysis"],
+    "tags": ["fundamental", "calculus", "rate-of-change", "differentiation"],
+    "complexity": 7,
+    "requires": ["calculus_limit", "function", "real_numbers"],
+    "generalizes": [],
+    "special_cases": ["partial_derivative", "directional_derivative"],
+    "used_in": ["optimization", "related_rates", "curve_sketching", "physics_kinematics"],
+    "appears_in": [
+      {"system": "VCE", "exam": "Mathematical Methods", "year_level": 11, "depth": "core", "required": true},
+      {"system": "AP", "exam": "AP Calculus AB", "year_level": 12, "depth": "core", "required": true},
+      {"system": "IB", "exam": "Mathematics HL", "year_level": 12, "depth": "core", "required": true},
+      {"system": "A_LEVEL", "exam": "A-Level Mathematics", "year_level": 13, "depth": "core", "required": true}
+    ],
+    "created_at": 1735238400000,
+    "updated_at": 1735238400000
+  },
+  {
+    "id": "continuity",
+    "type": "concept",
+    "title": "Continuity",
+    "latex": "\\lim_{x \\to a} f(x) = f(a)",
+    "description": "A function is continuous at a point if the limit equals the function value at that point. No breaks, jumps, or holes in the graph.",
+    "domains": ["Calculus", "Analysis"],
+    "tags": ["calculus", "function", "limit"],
+    "complexity": 5,
+    "requires": ["calculus_limit", "function"],
+    "generalizes": [],
+    "special_cases": [],
+    "used_in": ["intermediate_value_theorem", "calculus_derivative"],
+    "appears_in": [
+      {"system": "VCE", "exam": "Mathematical Methods", "year_level": 11, "depth": "core", "required": true},
+      {"system": "AP", "exam": "AP Calculus AB", "year_level": 12, "depth": "core", "required": true}
+    ],
+    "created_at": 1735238400000,
+    "updated_at": 1735238400000
+  },
+  {
+    "id": "antiderivative",
+    "type": "concept",
+    "title": "Antiderivative",
+    "latex": "\\int f(x)\\,dx = F(x) + C",
+    "description": "A function whose derivative is the given function. Also called indefinite integral. Foundation of integration.",
+    "domains": ["Calculus"],
+    "tags": ["calculus", "integration", "antiderivative"],
+    "complexity": 7,
+    "requires": ["calculus_derivative", "function"],
+    "generalizes": [],
+    "special_cases": [],
+    "used_in": ["definite_integral", "area_under_curve"],
+    "appears_in": [
+      {"system": "VCE", "exam": "Mathematical Methods", "year_level": 12, "depth": "core", "required": true},
+      {"system": "AP", "exam": "AP Calculus AB", "year_level": 12, "depth": "core", "required": true}
+    ],
+    "created_at": 1735238400000,
+    "updated_at": 1735238400000
+  }
+]
