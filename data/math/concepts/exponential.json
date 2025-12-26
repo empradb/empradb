@@ -1,0 +1,106 @@
+[
+  {
+    "id": "exponential_function",
+    "type": "concept",
+    "title": "Exponential Function",
+    "latex": "f(x) = a \\cdot b^x",
+    "description": "Function where the variable appears in the exponent. Models growth and decay processes. When b > 1, represents exponential growth; when 0 < b < 1, represents decay.",
+    "domains": ["Algebra", "Functions", "Calculus"],
+    "tags": ["exponential", "growth", "decay", "function"],
+    "complexity": 6,
+    "requires": ["function", "exponent"],
+    "generalizes": [],
+    "special_cases": ["natural_exponential"],
+    "used_in": ["logarithm", "compound_interest", "population_growth", "radioactive_decay"],
+    "appears_in": [
+      {"system": "VCE", "exam": "Mathematical Methods", "year_level": 11, "depth": "core", "required": true},
+      {"system": "AP", "exam": "AP Calculus AB", "year_level": 12, "depth": "core", "required": true},
+      {"system": "IB", "exam": "Mathematics SL", "year_level": 11, "depth": "core", "required": true}
+    ],
+    "created_at": 1735238400000,
+    "updated_at": 1735238400000
+  },
+  {
+    "id": "natural_exponential",
+    "type": "concept",
+    "title": "Natural Exponential Function",
+    "latex": "f(x) = e^x",
+    "description": "Exponential function with base e (Euler's number ≈ 2.71828). Unique function equal to its own derivative. Most important exponential in calculus.",
+    "domains": ["Calculus", "Analysis"],
+    "tags": ["exponential", "e", "natural", "euler"],
+    "complexity": 7,
+    "requires": ["exponential_function", "euler_number"],
+    "generalizes": ["exponential_function"],
+    "special_cases": [],
+    "used_in": ["natural_logarithm", "calculus_derivative", "differential_equations"],
+    "appears_in": [
+      {"system": "VCE", "exam": "Mathematical Methods", "year_level": 12, "depth": "core", "required": true},
+      {"system": "AP", "exam": "AP Calculus AB", "year_level": 12, "depth": "core", "required": true},
+      {"system": "IB", "exam": "Mathematics HL", "year_level": 12, "depth": "core", "required": true}
+    ],
+    "created_at": 1735238400000,
+    "updated_at": 1735238400000
+  },
+  {
+    "id": "logarithm",
+    "type": "concept",
+    "title": "Logarithm",
+    "latex": "y = \\log_b(x) \\iff b^y = x",
+    "description": "Inverse of exponential function. Answers the question: to what power must the base be raised to get this number? Fundamental in solving exponential equations.",
+    "domains": ["Algebra", "Functions"],
+    "tags": ["logarithm", "inverse", "exponential"],
+    "complexity": 6,
+    "requires": ["exponential_function", "inverse_function", "exponent"],
+    "generalizes": [],
+    "special_cases": ["natural_logarithm", "common_logarithm"],
+    "used_in": ["log_laws", "exponential_equations", "calculus_derivative"],
+    "appears_in": [
+      {"system": "VCE", "exam": "Mathematical Methods", "year_level": 11, "depth": "core", "required": true},
+      {"system": "IB", "exam": "Mathematics SL", "year_level": 11, "depth": "core", "required": true},
+      {"system": "A_LEVEL", "exam": "A-Level Mathematics", "year_level": 12, "depth": "core", "required": true}
+    ],
+    "created_at": 1735238400000,
+    "updated_at": 1735238400000
+  },
+  {
+    "id": "natural_logarithm",
+    "type": "concept",
+    "title": "Natural Logarithm",
+    "latex": "\\ln(x) = \\log_e(x)",
+    "description": "Logarithm with base e. Inverse of natural exponential function. Most important logarithm in calculus. Derivative of ln(x) is 1/x.",
+    "domains": ["Calculus", "Analysis"],
+    "tags": ["logarithm", "natural", "ln", "euler"],
+    "complexity": 7,
+    "requires": ["logarithm", "natural_exponential"],
+    "generalizes": ["logarithm"],
+    "special_cases": [],
+    "used_in": ["integration", "calculus_derivative", "growth_models"],
+    "appears_in": [
+      {"system": "VCE", "exam": "Mathematical Methods", "year_level": 12, "depth": "core", "required": true},
+      {"system": "AP", "exam": "AP Calculus AB", "year_level": 12, "depth": "core", "required": true},
+      {"system": "IB", "exam": "Mathematics HL", "year_level": 12, "depth": "core", "required": true}
+    ],
+    "created_at": 1735238400000,
+    "updated_at": 1735238400000
+  },
+  {
+    "id": "euler_number",
+    "type": "concept",
+    "title": "Euler's Number (e)",
+    "latex": "e = \\lim_{n \\to \\infty}\\left(1 + \\frac{1}{n}\\right)^n \\approx 2.71828",
+    "description": "Mathematical constant, base of natural logarithm. Appears naturally in calculus, compound interest, probability. Irrational and transcendental number.",
+    "domains": ["Analysis", "Calculus"],
+    "tags": ["constant", "euler", "e", "fundamental"],
+    "complexity": 7,
+    "requires": ["calculus_limit", "exponent"],
+    "generalizes": [],
+    "special_cases": [],
+    "used_in": ["natural_exponential", "natural_logarithm", "compound_interest"],
+    "appears_in": [
+      {"system": "VCE", "exam": "Mathematical Methods", "year_level": 12, "depth": "intro", "required": true},
+      {"system": "AP", "exam": "AP Calculus AB", "year_level": 12, "depth": "core", "required": true}
+    ],
+    "created_at": 1735238400000,
+    "updated_at": 1735238400000
+  }
+]
