@@ -1,0 +1,46 @@
+{
+  "id": "algebra_quadratic",
+  "type": "concept",
+  "title": "Quadratic Function",
+  "latex": "f(x) = ax^2 + bx + c",
+  "description": "A polynomial function of degree two. Creates a parabola when graphed. Fundamental in algebra with applications across mathematics and physics.",
+  "domains": ["Algebra", "Functions"],
+  "tags": ["polynomial", "parabola", "algebra", "function"],
+  "complexity": 4,
+  "requires": ["function", "polynomial", "real_numbers"],
+  "generalizes": ["linear_function"],
+  "special_cases": [],
+  "used_in": ["optimization", "projectile_motion", "vertex_form"],
+  "appears_in": [
+    {
+      "system": "VCE",
+      "exam": "Mathematical Methods",
+      "year_level": 10,
+      "depth": "core",
+      "required": true
+    },
+    {
+      "system": "GCSE",
+      "exam": "GCSE Mathematics",
+      "year_level": 11,
+      "depth": "core",
+      "required": true
+    },
+    {
+      "system": "SAT",
+      "exam": "SAT Math",
+      "year_level": 12,
+      "depth": "core",
+      "required": true
+    },
+    {
+      "system": "IB",
+      "exam": "Mathematics SL",
+      "year_level": 11,
+      "depth": "core",
+      "required": true
+    }
+  ],
+  "created_at": 1735238400000,
+  "updated_at": 1735238400000
+}
