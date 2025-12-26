@@ -1,0 +1,53 @@
+{
+  "id": "quadratic_formula",
+  "type": "formula",
+  "title": "Quadratic Formula",
+  "latex": "x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}",
+  "description": "Solves any quadratic equation ax² + bx + c = 0. Provides exact solutions including complex roots. The discriminant (b² - 4ac) determines the nature of solutions.",
+  "domains": ["Algebra", "Equations"],
+  "tags": ["quadratic", "solving", "formula", "roots"],
+  "complexity": 5,
+  "requires": ["algebra_quadratic", "square_root", "fraction"],
+  "generalizes": [],
+  "special_cases": [],
+  "used_in": ["complex_numbers", "discriminant", "completing_square"],
+  "appears_in": [
+    {
+      "system": "VCE",
+      "exam": "Mathematical Methods",
+      "year_level": 10,
+      "depth": "core",
+      "required": true
+    },
+    {
+      "system": "GCSE",
+      "exam": "GCSE Mathematics",
+      "year_level": 11,
+      "depth": "core",
+      "required": true
+    },
+    {
+      "system": "SAT",
+      "exam": "SAT Math",
+      "year_level": 12,
+      "depth": "core",
+      "required": true
+    },
+    {
+      "system": "IB",
+      "exam": "Mathematics SL",
+      "year_level": 11,
+      "depth": "core",
+      "required": true
+    },
+    {
+      "system": "A_LEVEL",
+      "exam": "A-Level Mathematics",
+      "year_level": 12,
+      "depth": "core",
+      "required": true
+    }
+  ],
+  "created_at": 1735238400000,
+  "updated_at": 1735238400000
+}
