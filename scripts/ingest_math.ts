@@ -180,6 +180,35 @@ class MathIngestionEngine {
     return typeMap[type];
   }
 
+  async bulkIngest(nodes: MathNode[]): Promise<void> {
+    for (const node of nodes) {
+      await this.processNode(node);
+    }
+  }
+
+  async ingestDirectory(dirPath: string): Promise<void> {
+    if (!fs.existsSync(dirPath)) {
+      console.error(`Directory not found: ${dirPath}`);
+      return;
+    }
+
+    const files = fs.readdirSync(dirPath);
+    
+    for (const file of files) {
+      const filePath = path.join(dirPath, file);
+      const stat = fs.statSync(filePath);
+
+      if (stat.isFile()) {
+        const ext = path.extname(file).toLowerCase();
+        if (ext === '.json') {
+          await this.ingestFromJSON(filePath);
+        } else if (ext === '.csv') {
+          await this.ingestFromCSV(filePath);
+        }
+      }
+    }
+  }
+
   private generateId(title: string): string {
     return title
       .toLowerCase()
