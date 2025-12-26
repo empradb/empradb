@@ -1,6 +1,8 @@
 "use client";
 
 import { useState } from "react";
+import ConceptCard from "@/components/ConceptCard";
+import { LaTeXBlock } from "@/components/LaTeX";
 
 interface SearchResult {
   node: {
