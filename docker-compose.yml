@@ -1,0 +1,50 @@
+version: '3.8'
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: apps/web/Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      - NEXT_PUBLIC_API_URL=http://api:3001
+    depends_on:
+      - api
+    volumes:
+      - ./apps/web:/app/apps/web
+      - /app/apps/web/node_modules
+      - /app/apps/web/.next
+    command: npm run dev
+
+  api:
+    build:
+      context: .
+      dockerfile: apps/api/Dockerfile
+    ports:
+      - "3001:3001"
+    environment:
+      - PORT=3001
+      - NODE_ENV=development
+      - DATA_PATH=/app/data
+    volumes:
+      - ./apps/api:/app/apps/api
+      - ./data:/app/data
+      - /app/apps/api/node_modules
+    command: npm run dev
+
+  planner:
+    build:
+      context: .
+      dockerfile: apps/planner/Dockerfile
+    environment:
+      - NODE_ENV=development
+    volumes:
+      - ./apps/planner:/app/apps/planner
+      - ./data:/app/data
+      - /app/apps/planner/node_modules
+    command: npm run dev
+
+volumes:
+  node_modules:
+  data:
