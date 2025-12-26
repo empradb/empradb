@@ -1,0 +1,103 @@
+[
+  {
+    "id": "conditional_probability",
+    "type": "formula",
+    "title": "Conditional Probability",
+    "latex": "P(A|B) = \\frac{P(A \\cap B)}{P(B)}",
+    "description": "Probability of event A occurring given that event B has occurred. Foundation for Bayes' theorem and many statistical inference techniques.",
+    "domains": ["Probability", "Statistics"],
+    "tags": ["probability", "conditional", "bayes"],
+    "complexity": 6,
+    "requires": ["probability", "intersection"],
+    "generalizes": [],
+    "special_cases": [],
+    "used_in": ["bayes_theorem", "independence_test", "markov_chains"],
+    "appears_in": [
+      {"system": "VCE", "exam": "Further Mathematics", "year_level": 12, "depth": "core", "required": true},
+      {"system": "IB", "exam": "Mathematics SL", "year_level": 12, "depth": "core", "required": true}
+    ],
+    "created_at": 1735238400000,
+    "updated_at": 1735238400000
+  },
+  {
+    "id": "bayes_theorem",
+    "type": "theorem",
+    "title": "Bayes' Theorem",
+    "latex": "P(A|B) = \\frac{P(B|A)P(A)}{P(B)}",
+    "description": "Describes probability of an event based on prior knowledge. Fundamental in statistical inference, machine learning, and decision theory.",
+    "domains": ["Probability", "Statistics"],
+    "tags": ["probability", "bayes", "theorem", "inference"],
+    "complexity": 7,
+    "requires": ["conditional_probability", "probability"],
+    "generalizes": [],
+    "special_cases": [],
+    "used_in": ["bayesian_inference", "classification", "hypothesis_testing"],
+    "appears_in": [
+      {"system": "VCE", "exam": "Specialist Mathematics", "year_level": 12, "depth": "advanced", "required": false},
+      {"system": "IB", "exam": "Mathematics HL", "year_level": 12, "depth": "core", "required": true}
+    ],
+    "created_at": 1735238400000,
+    "updated_at": 1735238400000
+  },
+  {
+    "id": "combination",
+    "type": "formula",
+    "title": "Combination",
+    "latex": "\\binom{n}{k} = \\frac{n!}{k!(n-k)!}",
+    "description": "Number of ways to choose k items from n items without regard to order. Used in probability, binomial theorem, and counting problems.",
+    "domains": ["Combinatorics", "Probability"],
+    "tags": ["combination", "counting", "binomial"],
+    "complexity": 5,
+    "requires": ["factorial", "division"],
+    "generalizes": [],
+    "special_cases": [],
+    "used_in": ["binomial_expansion", "probability", "permutation"],
+    "appears_in": [
+      {"system": "VCE", "exam": "Mathematical Methods", "year_level": 11, "depth": "core", "required": true},
+      {"system": "SAT", "exam": "SAT Math", "year_level": 12, "depth": "intro", "required": false},
+      {"system": "IB", "exam": "Mathematics SL", "year_level": 11, "depth": "core", "required": true}
+    ],
+    "created_at": 1735238400000,
+    "updated_at": 1735238400000
+  },
+  {
+    "id": "permutation",
+    "type": "formula",
+    "title": "Permutation",
+    "latex": "P(n,k) = \\frac{n!}{(n-k)!}",
+    "description": "Number of ways to arrange k items from n items where order matters. Used in counting problems and probability.",
+    "domains": ["Combinatorics", "Probability"],
+    "tags": ["permutation", "counting", "arrangement"],
+    "complexity": 5,
+    "requires": ["factorial", "division"],
+    "generalizes": [],
+    "special_cases": [],
+    "used_in": ["probability", "arrangement_problems"],
+    "appears_in": [
+      {"system": "VCE", "exam": "Mathematical Methods", "year_level": 11, "depth": "core", "required": true},
+      {"system": "IB", "exam": "Mathematics SL", "year_level": 11, "depth": "core", "required": true}
+    ],
+    "created_at": 1735238400000,
+    "updated_at": 1735238400000
+  },
+  {
+    "id": "expected_value",
+    "type": "concept",
+    "title": "Expected Value",
+    "latex": "E(X) = \\sum_{i} x_i P(x_i)",
+    "description": "Average value of a random variable weighted by probabilities. Long-run average if experiment repeated many times.",
+    "domains": ["Probability", "Statistics"],
+    "tags": ["probability", "expectation", "average"],
+    "complexity": 6,
+    "requires": ["probability", "weighted_average", "summation"],
+    "generalizes": [],
+    "special_cases": [],
+    "used_in": ["variance", "decision_theory", "game_theory"],
+    "appears_in": [
+      {"system": "VCE", "exam": "Further Mathematics", "year_level": 12, "depth": "core", "required": true},
+      {"system": "IB", "exam": "Mathematics SL", "year_level": 12, "depth": "core", "required": true}
+    ],
+    "created_at": 1735238400000,
+    "updated_at": 1735238400000
+  }
+]
