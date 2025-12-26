@@ -1,0 +1,123 @@
+[
+  {
+    "id": "matrix",
+    "type": "concept",
+    "title": "Matrix",
+    "latex": "A = \\begin{pmatrix} a_{11} & a_{12} \\\\ a_{21} & a_{22} \\end{pmatrix}",
+    "description": "Rectangular array of numbers arranged in rows and columns. Used to represent linear transformations, solve systems of equations, and organize data.",
+    "domains": ["Linear Algebra", "Applied Mathematics"],
+    "tags": ["matrix", "linear-algebra", "array", "fundamental"],
+    "complexity": 6,
+    "requires": ["array", "coordinate_system"],
+    "generalizes": [],
+    "special_cases": ["square_matrix", "identity_matrix", "diagonal_matrix"],
+    "used_in": ["matrix_multiplication", "determinant", "inverse_matrix", "linear_systems"],
+    "appears_in": [
+      {"system": "VCE", "exam": "Specialist Mathematics", "year_level": 12, "depth": "core", "required": true},
+      {"system": "IB", "exam": "Mathematics HL", "year_level": 12, "depth": "core", "required": true},
+      {"system": "A_LEVEL", "exam": "A-Level Further Mathematics", "year_level": 13, "depth": "core", "required": true}
+    ],
+    "created_at": 1735238400000,
+    "updated_at": 1735238400000
+  },
+  {
+    "id": "matrix_multiplication",
+    "type": "concept",
+    "title": "Matrix Multiplication",
+    "latex": "(AB)_{ij} = \\sum_{k} A_{ik}B_{kj}",
+    "description": "Combining two matrices by row-column multiplication. Not commutative (AB ≠ BA in general). Represents composition of linear transformations.",
+    "domains": ["Linear Algebra"],
+    "tags": ["matrix", "multiplication", "operation"],
+    "complexity": 7,
+    "requires": ["matrix", "summation", "multiplication"],
+    "generalizes": [],
+    "special_cases": [],
+    "used_in": ["linear_transformation", "matrix_inverse", "eigenvalues"],
+    "appears_in": [
+      {"system": "VCE", "exam": "Specialist Mathematics", "year_level": 12, "depth": "core", "required": true},
+      {"system": "IB", "exam": "Mathematics HL", "year_level": 12, "depth": "core", "required": true}
+    ],
+    "created_at": 1735238400000,
+    "updated_at": 1735238400000
+  },
+  {
+    "id": "determinant",
+    "type": "concept",
+    "title": "Determinant",
+    "latex": "\\det(A) = ad - bc \\text{ for } A = \\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix}",
+    "description": "Scalar value calculated from square matrix. Indicates if matrix is invertible (det ≠ 0). Represents scaling factor of linear transformation.",
+    "domains": ["Linear Algebra"],
+    "tags": ["matrix", "determinant", "scalar"],
+    "complexity": 7,
+    "requires": ["matrix", "multiplication", "subtraction"],
+    "generalizes": [],
+    "special_cases": [],
+    "used_in": ["matrix_inverse", "cramers_rule", "eigenvalues"],
+    "appears_in": [
+      {"system": "VCE", "exam": "Specialist Mathematics", "year_level": 12, "depth": "core", "required": true},
+      {"system": "IB", "exam": "Mathematics HL", "year_level": 12, "depth": "core", "required": true}
+    ],
+    "created_at": 1735238400000,
+    "updated_at": 1735238400000
+  },
+  {
+    "id": "inverse_matrix",
+    "type": "concept",
+    "title": "Matrix Inverse",
+    "latex": "AA^{-1} = A^{-1}A = I",
+    "description": "Matrix that undoes the effect of another matrix. Exists only if determinant is non-zero. Used to solve matrix equations.",
+    "domains": ["Linear Algebra"],
+    "tags": ["matrix", "inverse", "operation"],
+    "complexity": 8,
+    "requires": ["matrix", "determinant", "identity_matrix"],
+    "generalizes": [],
+    "special_cases": [],
+    "used_in": ["solving_systems", "linear_equations"],
+    "appears_in": [
+      {"system": "VCE", "exam": "Specialist Mathematics", "year_level": 12, "depth": "core", "required": true},
+      {"system": "IB", "exam": "Mathematics HL", "year_level": 12, "depth": "core", "required": true}
+    ],
+    "created_at": 1735238400000,
+    "updated_at": 1735238400000
+  },
+  {
+    "id": "identity_matrix",
+    "type": "concept",
+    "title": "Identity Matrix",
+    "latex": "I = \\begin{pmatrix} 1 & 0 \\\\ 0 & 1 \\end{pmatrix}",
+    "description": "Square matrix with 1s on diagonal and 0s elsewhere. Acts as multiplicative identity (AI = IA = A). Analogous to the number 1.",
+    "domains": ["Linear Algebra"],
+    "tags": ["matrix", "identity", "fundamental"],
+    "complexity": 5,
+    "requires": ["matrix", "diagonal"],
+    "generalizes": ["matrix"],
+    "special_cases": [],
+    "used_in": ["matrix_inverse", "eigenvalues", "linear_transformation"],
+    "appears_in": [
+      {"system": "VCE", "exam": "Specialist Mathematics", "year_level": 12, "depth": "core", "required": true},
+      {"system": "IB", "exam": "Mathematics HL", "year_level": 12, "depth": "core", "required": true}
+    ],
+    "created_at": 1735238400000,
+    "updated_at": 1735238400000
+  },
+  {
+    "id": "transpose",
+    "type": "concept",
+    "title": "Matrix Transpose",
+    "latex": "(A^T)_{ij} = A_{ji}",
+    "description": "Matrix obtained by swapping rows and columns. Rows become columns, columns become rows. Important in many matrix operations.",
+    "domains": ["Linear Algebra"],
+    "tags": ["matrix", "transpose", "operation"],
+    "complexity": 5,
+    "requires": ["matrix"],
+    "generalizes": [],
+    "special_cases": ["symmetric_matrix"],
+    "used_in": ["orthogonal_matrix", "least_squares"],
+    "appears_in": [
+      {"system": "VCE", "exam": "Specialist Mathematics", "year_level": 12, "depth": "core", "required": true},
+      {"system": "IB", "exam": "Mathematics HL", "year_level": 12, "depth": "core", "required": true}
+    ],
+    "created_at": 1735238400000,
+    "updated_at": 1735238400000
+  }
+]
