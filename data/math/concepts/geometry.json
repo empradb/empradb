@@ -1,0 +1,84 @@
+[
+  {
+    "id": "right_triangle",
+    "type": "concept",
+    "title": "Right Triangle",
+    "latex": "\\angle C = 90^\\circ",
+    "description": "A triangle with one 90-degree angle. Foundation for trigonometry and the Pythagorean theorem. The side opposite the right angle is the hypotenuse.",
+    "domains": ["Geometry", "Trigonometry"],
+    "tags": ["triangle", "geometry", "fundamental"],
+    "complexity": 3,
+    "requires": ["triangle", "angle"],
+    "generalizes": ["triangle"],
+    "special_cases": ["isosceles_right_triangle"],
+    "used_in": ["pythagorean_theorem", "trigonometry", "distance_formula"],
+    "appears_in": [
+      {"system": "VCE", "exam": "General Mathematics", "year_level": 10, "depth": "core", "required": true},
+      {"system": "GCSE", "exam": "GCSE Mathematics", "year_level": 10, "depth": "core", "required": true},
+      {"system": "SAT", "exam": "SAT Math", "year_level": 12, "depth": "core", "required": true}
+    ],
+    "created_at": 1735238400000,
+    "updated_at": 1735238400000
+  },
+  {
+    "id": "circle",
+    "type": "concept",
+    "title": "Circle",
+    "latex": "(x-h)^2 + (y-k)^2 = r^2",
+    "description": "The set of all points equidistant from a center point. Fundamental shape in geometry with constant curvature.",
+    "domains": ["Geometry"],
+    "tags": ["circle", "geometry", "conic-section"],
+    "complexity": 4,
+    "requires": ["distance", "point"],
+    "generalizes": [],
+    "special_cases": ["unit_circle"],
+    "used_in": ["trigonometry", "pi", "circumference", "area"],
+    "appears_in": [
+      {"system": "VCE", "exam": "Mathematical Methods", "year_level": 10, "depth": "core", "required": true},
+      {"system": "GCSE", "exam": "GCSE Mathematics", "year_level": 10, "depth": "core", "required": true},
+      {"system": "SAT", "exam": "SAT Math", "year_level": 12, "depth": "core", "required": true}
+    ],
+    "created_at": 1735238400000,
+    "updated_at": 1735238400000
+  },
+  {
+    "id": "unit_circle",
+    "type": "concept",
+    "title": "Unit Circle",
+    "latex": "x^2 + y^2 = 1",
+    "description": "Circle with radius 1 centered at the origin. Foundation for defining trigonometric functions and understanding angle measure.",
+    "domains": ["Geometry", "Trigonometry"],
+    "tags": ["circle", "trigonometry", "fundamental"],
+    "complexity": 5,
+    "requires": ["circle", "coordinate_plane"],
+    "generalizes": [],
+    "special_cases": [],
+    "used_in": ["sin_function", "cos_function", "pythagorean_identity"],
+    "appears_in": [
+      {"system": "VCE", "exam": "Mathematical Methods", "year_level": 11, "depth": "core", "required": true},
+      {"system": "AP", "exam": "AP Calculus AB", "year_level": 12, "depth": "intro", "required": true},
+      {"system": "IB", "exam": "Mathematics HL", "year_level": 11, "depth": "core", "required": true}
+    ],
+    "created_at": 1735238400000,
+    "updated_at": 1735238400000
+  },
+  {
+    "id": "triangle",
+    "type": "concept",
+    "title": "Triangle",
+    "description": "A polygon with three sides and three angles. Sum of interior angles is always 180 degrees. Most fundamental polygon.",
+    "domains": ["Geometry"],
+    "tags": ["triangle", "polygon", "geometry", "fundamental"],
+    "complexity": 2,
+    "requires": ["angle", "line_segment"],
+    "generalizes": ["polygon"],
+    "special_cases": ["right_triangle", "equilateral_triangle", "isosceles_triangle"],
+    "used_in": ["trigonometry", "area_formulas", "triangle_inequality"],
+    "appears_in": [
+      {"system": "GCSE", "exam": "GCSE Mathematics", "year_level": 9, "depth": "core", "required": true},
+      {"system": "SAT", "exam": "SAT Math", "year_level": 12, "depth": "core", "required": true}
+    ],
+    "created_at": 1735238400000,
+    "updated_at": 1735238400000
+  }
+]
